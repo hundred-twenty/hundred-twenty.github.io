@@ -19,22 +19,33 @@ body {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
 }
 
 .logo {
-	width: 50vw;
-	height: 20vw;
-	background: url('/assets/logo.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
+	width: 100vw;
+    height: 3rem;
+    background: url(/assets/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    background-color: white;
+}
+
+.text {
+    width: 80vw;
+    text-align: center;
+    color: #25527B;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 .social {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    font-size: 2rem;
 }
 
 .btn-social-icon {
@@ -49,6 +60,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+    text-decoration: none;
 }
 
 .btn-mail {
@@ -71,8 +83,8 @@ body {
 </style>
 </head>
 <body>
+	<div class="logo"></div>
 	<div class="container">
-		<div class="logo"></div>
 		<div class="text">האתר יחזור לפעילות לקראת הבחירות הבאות.</div>
 		<div class="social">
 			<a class="btn-social-icon btn-facebook" href="https://www.facebook.com/hundredtwenty.xyz">
