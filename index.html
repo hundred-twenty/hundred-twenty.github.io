@@ -1,25 +1,90 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="icon" type="image/png" href="/assets/favicon.jpg"/>
 	<title>מאה עשרים</title>
+	<link rel="icon" type="image/png" href="/assets/favicon.jpg"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+body {
+	background: whitesmoke;
+	font-family: sans-serif;
+	direction: rtl;
+	margin: 0;
+}
+
 .container {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 50vw;
+	height: 20vw;
+	background: url('/assets/logo.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+
+.social {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.message {
-	background: url('/assets/logo.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;
+
+.btn-social-icon {
+	width: 2em;
+	height: 2em;
+	border-radius: 1em;
+	margin: 1em;
+	
+	color: white;
+	background: black;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-mail {
+	background: #5C83B0; 
+}
+
+.btn-twitter {
+	background: #55ACEE;
+}
+
+.btn-facebook {
+	background: #3B5998;
+}
+
+@media only screen and (max-width: 100vh) {
+	body {
+		font-size: 30px;
+	}
 }
 </style>
 </head>
 <body>
 	<div class="container">
-		<div class="message"></div>
+		<div class="logo"></div>
+		<div class="text">האתר יחזור לפעילות לקראת הבחירות הבאות.</div>
+		<div class="social">
+			<a class="btn-social-icon btn-facebook" href="https://www.facebook.com/hundredtwenty.xyz">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a class="btn-social-icon btn-twitter" href="https://twitter.com/Hundred20_xyz?s=09">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a class="btn-social-icon btn-mail" href="mailto:admin@hundredtwenty.xyz">
+				<i class="fa fa-envelope"></i>
+			</a>
+		</div>
 	</div>
 </body>
 </html>
